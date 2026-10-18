@@ -1,0 +1,198 @@
+{
+  "site": {
+    "name": "你的名字",
+    "logoMark": "你",
+    "kicker": "AIGC Portfolio",
+    "title": "AIGC\nPORTFOLIO",
+    "subtitle": "AI VISUAL CREATOR",
+    "ctaText": "查看作品",
+    "heroVideo": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    "heroPoster": "https://picsum.photos/seed/aihero/1920/1080",
+    "tasks": [
+      "剧本拆解中…",
+      "分镜生成中…",
+      "视频合成中…",
+      "色彩校正中…"
+    ]
+  },
+  "about": {
+    "lead": "这里写你的核心介绍。",
+    "body": "数字媒体艺术设计专业背景，专注于 AIGC 领域的创意与视觉设计。熟练运用 Stable Diffusion、Midjourney、ComfyUI 及即梦 AI 等生成式工具，构建高效的 AI 短剧工作流。擅长将抽象概念转化为具有情绪、故事与视觉张力的作品。",
+    "photo": "https://picsum.photos/seed/portrait/600/750",
+    "skills": [
+      { "group": "AIGC 影像与视觉生成", "items": ["Stable Diffusion", "Midjourney", "ComfyUI", "即梦 AI", "Runway", "可灵"] },
+      { "group": "AIGC 工作流与云平台", "items": ["LiblibAI", "RunningHub", "LoRA 训练", "ControlNet 精准控制"] },
+      { "group": "大语言模型与提示词工程", "items": ["ChatGPT", "Gemini", "DeepSeek", "Kimi", "豆包"] },
+      { "group": "三维建模与视效后期", "items": ["Cinema 4D", "Blender", "Photoshop", "After Effects", "Premiere", "DaVinci Resolve", "剪映"] }
+    ],
+    "profile": [
+      { "label": "姓名", "value": "你的名字" },
+      { "label": "专业", "value": "数字媒体艺术" },
+      { "label": "方向", "value": "AI短剧 / 分镜 / 视觉设计 / AI视频" },
+      { "label": "电话", "value": "138-0000-0000" },
+      { "label": "邮箱", "value": "hello@example.com" },
+      { "label": "微信", "value": "your_wechat_id" }
+    ]
+  },
+  "categories": ["漫剧", "概念设计", "TVC广告", "视觉设计", "IP设计"],
+  "works": [
+    {
+      "id": "jiuhaosuo",
+      "title": "《九号闸》",
+      "category": "漫剧",
+      "type": "video",
+      "cover": "https://picsum.photos/seed/jiuhaosuo/800/450",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "desc": "一部以赛博朋克都市为背景的 AI 漫剧，讲述末班地铁里守闸人守护记忆的故事。全程使用即梦 AI 生成分镜，ComfyUI 统一角色一致性。",
+      "traceImgs": [
+        "https://picsum.photos/seed/jhs1/400/300",
+        "https://picsum.photos/seed/jhs2/400/300",
+        "https://picsum.photos/seed/jhs3/400/300",
+        "https://picsum.photos/seed/jhs4/400/300"
+      ]
+    },
+    {
+      "id": "butianpu",
+      "title": "《补天铺》",
+      "category": "漫剧",
+      "type": "video",
+      "cover": "https://picsum.photos/seed/butianpu/800/450",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+      "desc": "古风神话重构短剧，取材女娲补天，转译为一家修补旧物的街角小铺。探索国风角色与材质表现。",
+      "traceImgs": [
+        "https://picsum.photos/seed/btp1/400/300",
+        "https://picsum.photos/seed/btp2/400/300",
+        "https://picsum.photos/seed/btp3/400/300"
+      ]
+    },
+    {
+      "id": "zoulangnvshen",
+      "title": "《走廊女王》",
+      "category": "漫剧",
+      "type": "image",
+      "cover": "https://picsum.photos/seed/zoulang/800/450",
+      "desc": "悬疑惊悚向 AI 漫剧，密闭走廊中的追逃叙事。以单色光影强化压迫感。",
+      "traceImgs": [
+        "https://picsum.photos/seed/zl1/400/300",
+        "https://picsum.photos/seed/zl2/400/300"
+      ]
+    },
+    {
+      "id": "wheretlightfalls",
+      "title": "《Where the Light Falls》",
+      "category": "概念设计",
+      "type": "image",
+      "cover": "https://picsum.photos/seed/lightfalls/800/450",
+      "desc": "光影叙事概念组图，为短片探索视觉基调与色彩脚本。",
+      "detailImgs": [
+        "https://picsum.photos/seed/lf1/600/450",
+        "https://picsum.photos/seed/lf2/600/450",
+        "https://picsum.photos/seed/lf3/600/450"
+      ]
+    },
+    {
+      "id": "shenhaishiguangzhe",
+      "title": "《深海拾荒者》",
+      "category": "概念设计",
+      "type": "image",
+      "cover": "https://picsum.photos/seed/shenhai/800/450",
+      "desc": "废土科幻概念设计，水下城市的拾荒者生态与载具设定。",
+      "detailImgs": [
+        "https://picsum.photos/seed/sh1/600/450",
+        "https://picsum.photos/seed/sh2/600/450",
+        "https://picsum.photos/seed/sh3/600/450",
+        "https://picsum.photos/seed/sh4/600/450"
+      ]
+    },
+    {
+      "id": "duoduoninmengcha",
+      "title": "《多多柠檬茶》",
+      "category": "TVC广告",
+      "type": "video",
+      "cover": "https://picsum.photos/seed/ningmeng/800/450",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+      "desc": "清爽夏日饮品 TVC，明快色调与产品特写结合，15 秒完播率导向。",
+      "traceImgs": [
+        "https://picsum.photos/seed/nm1/400/300",
+        "https://picsum.photos/seed/nm2/400/300"
+      ]
+    },
+    {
+      "id": "jeepspirit",
+      "title": "《Jeep Spirit 轻盈防晒衣》",
+      "category": "TVC广告",
+      "type": "image",
+      "cover": "https://picsum.photos/seed/jeep/800/450",
+      "desc": "户外轻运动服饰广告，强调透气轻盈与户外场景融合。",
+      "traceImgs": [
+        "https://picsum.photos/seed/jp1/400/300",
+        "https://picsum.photos/seed/jp2/400/300"
+      ]
+    },
+    {
+      "id": "amazon1",
+      "title": "空气炸锅 · 亚马逊",
+      "category": "视觉设计",
+      "type": "image",
+      "cover": "https://picsum.photos/seed/airfryer/800/450",
+      "desc": "跨境电商主图与 A+ 页面视觉设计，突出卖点与场景化陈列。",
+      "detailImgs": [
+        "https://picsum.photos/seed/af1/600/450",
+        "https://picsum.photos/seed/af2/600/450"
+      ]
+    },
+    {
+      "id": "amazon2",
+      "title": "置物架 · 亚马逊",
+      "category": "视觉设计",
+      "type": "image",
+      "cover": "https://picsum.photos/seed/zhijia/800/450",
+      "desc": "家居收纳类目电商视觉，强调空间利用与整洁感。",
+      "detailImgs": [
+        "https://picsum.photos/seed/zj1/600/450",
+        "https://picsum.photos/seed/zj2/600/450"
+      ]
+    },
+    {
+      "id": "succuworld",
+      "title": "「SUCCU WORLD」多肉宣传片",
+      "category": "IP设计",
+      "type": "video",
+      "cover": "https://picsum.photos/seed/succu/800/450",
+      "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+      "desc": "原创多肉 IP 世界观与角色设定，配套宣传短片与商业延展。",
+      "traceImgs": [
+        "https://picsum.photos/seed/sc1/400/300",
+        "https://picsum.photos/seed/sc2/400/300"
+      ]
+    },
+    {
+      "id": "iparchive",
+      "title": "IP角色档案",
+      "category": "IP设计",
+      "type": "image",
+      "cover": "https://picsum.photos/seed/ipfile/800/450",
+      "desc": "角色三视图与性格设定档案，统一 IP 视觉语言。",
+      "detailImgs": [
+        "https://picsum.photos/seed/ip1/600/450",
+        "https://picsum.photos/seed/ip2/600/450",
+        "https://picsum.photos/seed/ip3/600/450"
+      ]
+    }
+  ],
+  "resume": {
+    "pdf": "",
+    "pptx": ""
+  },
+  "contact": {
+    "title": "期待与你，共创下一个视觉奇点",
+    "text": "无论是项目概念设计、AI 生成视觉素材，还是想探索生成式 AI 的创意可能，我都期待与你交流。",
+    "links": [
+      { "label": "邮箱", "href": "mailto:hello@example.com", "text": "hello@example.com" },
+      { "label": "微信", "href": "#wechat", "text": "your_wechat_id" }
+    ],
+    "tags": ["AI短剧", "分镜设计", "视觉设计", "IP设计"],
+    "copyright": "© 2026 你的名字. All rights reserved.",
+    "wechatQr": ""
+  }
+}

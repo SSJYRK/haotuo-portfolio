@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIGC Portfolio</title>
+  <meta name="description" content="AI 视觉创作者作品集 · AI短剧 / 分镜 / 视觉设计" />
+  <script>
+    /* 每次进入站点都从首页（第一屏）开始 */
+    (function () {
+      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+      if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+      var root = document.documentElement;
+      root.style.scrollBehavior = 'auto';
+      window.scrollTo(0, 0);
+      window.addEventListener('load', function () {
+        window.scrollTo(0, 0);
+        root.style.scrollBehavior = '';
+      }, { once: true });
+      window.addEventListener('pageshow', function (e) { if (e.persisted) window.scrollTo(0, 0); });
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="has-video-hero">
+
+  <!-- 加载动画 -->
+  <div class="loader" id="loader">
+    <div class="loader-circle"></div>
+    <div class="loader-text" id="loaderText">作品集</div>
+  </div>
+
+  <!-- 导航栏 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo"><span class="logo-mark" id="navMark">你</span><span id="navName">你的名字</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单"><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="navMenu"></ul>
+    </div>
+  </nav>
+
+  <!-- 第一屏 Hero -->
+  <header class="hero-script" id="hero" data-label="首页" data-en="AIGC">
+    <div class="hero-video-wrap">
+      <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster=""></video>
+      <div class="hero-video-overlay"></div>
+    </div>
+
+    <div class="hero-content-layer">
+      <div class="hero-inner">
+        <div class="hero-title-block fade-up" data-reveal="0">
+          <p class="hero-kicker"><span class="kicker-dot"></span><span id="heroKicker">AIGC Portfolio</span></p>
+          <h1 class="hero-mega" id="heroMega">AIGC<br />PORTFOLIO</h1>
+          <p class="hero-sub2" id="heroSub">AI VISUAL CREATOR</p>
+        </div>
+
+        <div class="hero-cta-wrap fade-up" data-reveal="300">
+          <a class="hero-cta" href="#works" id="heroCta">查看作品</a>
+        </div>
+
+        <div class="task-area">
+          <div class="task-card-wrap scale-in" data-reveal="500">
+            <div class="task-box">
+              <div class="task-glass"></div>
+              <div class="task-layer" id="taskLayer">
+                <div class="task-item" data-state="active">
+                  <div class="tl-idle">
+                    <span class="task-dot"></span>
+                    <span class="tl-text" id="taskText">剧本拆解中…</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-hint" data-hint></div>
+  </header>
+
+  <!-- 关于我 -->
+  <section class="section about-yk" id="about" data-label="关于" data-en="ABOUT">
+    <div class="section-label">About</div>
+    <div class="about-layout">
+      <div>
+        <h2 class="about-yk-title">关于我</h2>
+        <p class="lead" id="aboutLead"></p>
+        <p id="aboutBody"></p>
+        <div class="about-skills">
+          <div class="skills-grid skills-grid--about" id="skillsGridAbout"></div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-placeholder"><img id="aboutPhoto" src="" alt="头像 / 主视觉" /></div>
+        <dl id="profileFacts"></dl>
+      </div>
+    </div>
+    <div class="section-hint" data-hint></div>
+  </section>
+
+  <!-- 精选作品 -->
+  <section class="section gallery-yk" id="works" data-label="作品" data-en="WORKS">
+    <div class="section-label">精选作品</div>
+    <div class="tabs" id="worksFilter"></div>
+    <div class="gallery-sections" id="worksGrid"></div>
+    <div class="section-hint" data-hint></div>
+  </section>
+
+  <!-- 个人简历 -->
+  <section class="section resume-yk" id="resume" data-label="简历" data-en="RESUME">
+    <div class="section-label">Resume</div>
+    <div class="resume-inner">
+      <h2 class="resume-yk-title">个人简历</h2>
+      <div class="contact-links" id="resumeDownloads"></div>
+    </div>
+    <div class="section-hint" data-hint></div>
+  </section>
+
+  <!-- 联系我 -->
+  <section class="section contact-yk" id="contact" data-label="联系" data-en="CONTACT">
+    <div class="contact-inner">
+      <p class="contact-label">联系我</p>
+      <h2 class="contact-yk-title" id="contactTitle"></h2>
+      <p id="contactText"></p>
+      <div class="contact-links" id="contactLinks"></div>
+      <div class="contact-tags" id="contactTags"></div>
+      <p class="copyright" id="copyright"></p>
+    </div>
+    <div class="section-hint" data-hint></div>
+  </section>
+
+  <!-- 作品详情弹窗 -->
+  <div class="modal-overlay" id="workModal">
+    <div class="modal-content">
+      <button class="modal-close" id="workModalClose" aria-label="关闭">×</button>
+      <div id="workModalBody"></div>
+    </div>
+  </div>
+
+  <!-- 微信二维码弹窗（纯 CSS checkbox hack） -->
+  <input type="checkbox" id="wechat-toggle" />
+  <div class="qr-modal" id="wechat-modal">
+    <label class="qr-modal-box" for="wechat-toggle">
+      <span class="qr-modal-close">×</span>
+      <h3>扫码添加我的微信</h3>
+      <img id="wechatQr" src="" alt="微信二维码" />
+      <p>添加时备注「作品集」会更高效哦</p>
+    </label>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <footer class="icp-footer" style="text-align:center;padding:24px 0;font-size:13px;color:#888;background:transparent;">
+    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" style="color:#888;text-decoration:none;"></a>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
