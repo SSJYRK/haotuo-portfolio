@@ -1,0 +1,74 @@
+[
+  {
+    "id": "lenggui",
+    "filter": "short",
+    "category": "短剧",
+    "title": "《冷柜》系列",
+    "year": 2025,
+    "type": "乡村复仇",
+    "desc": "乡村复仇短剧，剧本到成片全程 AI 流水线交付。",
+    "cover": "lenggui.jpg"
+  },
+  {
+    "id": "shengdai",
+    "filter": "creative",
+    "category": "创意短片",
+    "title": "圣黛 CP 分镜",
+    "year": 2025,
+    "type": "情感",
+    "desc": "圣黛 CP 情感向分镜，逐镜对照提示词与成片，拆解运镜与情绪节奏。",
+    "cover": "shengdai.jpg"
+  },
+  {
+    "id": "huanzai",
+    "filter": "ip",
+    "category": "IP 角色",
+    "title": "大魔王欢仔 · 设定集",
+    "year": 2024,
+    "type": "角色",
+    "desc": "大魔王欢仔角色资产集，正侧背三视图搭配表情板多状态库，保障 AI 生成跨镜头形象一致。",
+    "cover": "huanzai.jpg"
+  },
+  {
+    "id": "xihuan-ni",
+    "filter": "short",
+    "category": "短剧",
+    "title": "《我们喜欢你》",
+    "year": 2025,
+    "type": "都市日常",
+    "desc": "都市日常短片，以生活流叙事呈现温暖质感。",
+    "cover": "xihuan-ni.jpg"
+  },
+  {
+    "id": "xiangju",
+    "filter": "creative",
+    "category": "创意短片",
+    "title": "《湘剧》非遗传承",
+    "year": 2024,
+    "type": "非遗传承",
+    "desc": "湘剧非遗传承短片，以 AI 影像复现戏台风华与传承故事。",
+    "cover": "xiangju.jpg"
+  },
+  {
+    "id": "shengdai-set",
+    "filter": "ip",
+    "category": "IP 角色",
+    "title": "圣黛 · 设定集",
+    "year": 2024,
+    "type": "角色",
+    "desc": "圣黛 CP 双角色资产集，黛玉与悟空三视图及面部特征标定，支撑同框戏份跨镜头形象一致。",
+    "cover": ["daiyu.jpg", "wukong.jpg"]
+  },
+  {
+    "id": "sansheng",
+    "filter": "wedding",
+    "category": "婚庆 MV",
+    "title": "《三生三世》",
+    "year": 2026,
+    "type": "婚礼",
+    "desc": "AI 婚礼 MV 定制成片，以三世意象讲述一段真实的爱情故事。",
+    "cover": "sansheng-cover.png",
+    "meta": ["类型：婚庆 MV", "时长：1分43秒", "交付：定制成片"],
+    "detail": "《三生三世》是一支 AI 婚礼 MV 定制作品。从新人的真实故事出发，用生成式影像构建跨越三世的视觉叙事——分镜设计、人物一致性、光影语言到成片调色，全流程 AI 产出，交付可直接用于婚礼现场的专属影像。"
+  }
+]
